@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  color: #333;
+  text-transform: uppercase;
+  overflow: hidden;
+  background: #e07894;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(15%, #e07894), color-stop(85%, #daa164));
+  background: linear-gradient(0deg, #e07894 15%, #daa164 85%);
+}
+
+/* LAYOUT */
+.search-row {
+  text-align: center;
+  width: 100%;
+}
+
+.search-row input[type='text'] {
+  margin-top: 1.5rem;
+  border: 0;
+  border-radius: 8px;
+  padding: 13px 10px 10px 10px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  width: 30%;
+}
+
+.search-row button {
+  padding: 8px 10px 8px;
+  font-size: 1.25rem;
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  background-color: #333;
+}
+
+.search-row button:hover {
+  cursor: pointer;
+}
+
+.title-heading {
+  width: 100%;
+  font-size: 1.25rem;
+  text-align: center;
+  color: #fff;
+}
+
+.city-heading {
+  margin-bottom: 1rem;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  height: 100vh;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+
+.days .col {
+  padding: 1rem;
+  width: 15%;
+  background-color: #fff;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  margin-bottom: 5rem;
+}
+
+.days .col .date {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.days .col .day-of-week {
+  font-size: 0.875rem;
+}
+
+.days .col .icon {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 6rem;
+}
+
+.days .col .temp {
+  font-size: 2rem;
+}
+
+.days .col .desc {
+  font-weight: 300;
+}
+
+@media (max-width: 960px) {
+  body {
+    overflow-y: scroll;
+  }
+  .search-row input[type='text'] {
+    width: 50%;
+  }
+  .title-heading {
+    margin-top: 1rem;
+  }
+  .days {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: flex-center;
+        -ms-flex-pack: flex-center;
+            justify-content: flex-center;
+  }
+  .days .col {
+    width: 25%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    height: auto;
+  }
+  .days .col {
+    width: 40%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
